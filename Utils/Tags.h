@@ -1,7 +1,7 @@
 #ifndef __TAGS_H__
 #define __TAGS_H__
 
-#include "Core/Utils/Vector.h"
+#include "core/types/Vector.h"
 
 #include <QString>
 #include <QStringList>

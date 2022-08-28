@@ -1,19 +1,21 @@
 #include "Workspace.h"
-#include "Core/Utils/Log.h"
+#include "app/Utils/Log.h"
+#include "app/Utils/Calendar.h"
 
 #include <QScriptEngine>
-#include "Core/Utils/Calendar.h"
-#include "Core/Utils/QStringUtils.h"
+
+
+#include "coreqt/Utils/QStringUtils.h"
 #include <QDebug>
 
 
-#include "Core/Nodes/NodeBase.h"
-#include "Core/Nodes/NodeInclude.h"
-#include "Core/Nodes/NodeVar.h"
-#include "Core/Nodes/Pim/NodeEvent.h"
-#include "Core/Nodes/Pim/NodePerson.h"
-#include "Core/Nodes/Pim/NodeProject.h"
-#include "Core/Nodes/Pim/NodeTask.h"
+#include "app/Nodes/NodeBase.h"
+#include "app/Nodes/NodeInclude.h"
+#include "app/Nodes/NodeVar.h"
+#include "app/Nodes/Pim/NodeEvent.h"
+#include "app/Nodes/Pim/NodePerson.h"
+#include "app/Nodes/Pim/NodeProject.h"
+#include "app/Nodes/Pim/NodeTask.h"
 
 
 void Workspace::init(QString _dir) {
@@ -75,6 +77,8 @@ void Workspace::loadTml(NodeBase* parent) {
 	QString node_name = inFile->current_node->getName();
 
 	NodeBase* node = createNode(node_name);
+
+	Log::get()->error("Workspace::loadTml createNode : %s", node_name.toLocal8Bit().data());
 
 	if (node == NULL) {
 		Log::get()->error("Workspace::loadTml can not create node : %s", node_name.toUtf8().data());

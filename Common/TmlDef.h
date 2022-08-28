@@ -1,9 +1,9 @@
 #ifndef __TMLDEF_H__
 #define __TMLDEF_H__
 
-#include "Core/Utils/Str.h"
-#include "Core/Utils/Vector.h"
-#include "Core/Common/Tml.h"
+#include "core/types/Str.h"
+#include "core/types/Vector.h"
+#include "coreqt/Common/Tml.h"
 #include "QString"
 
 class TmlDefTypeDef {

@@ -1,6 +1,6 @@
 #include "TmlPreprocessor.h"
-#include "Core/Utils/Log.h"
-#include "Core/Utils/QStringUtils.h"
+#include "app/Utils/Log.h"
+#include "coreqt/Utils/QStringUtils.h"
 
 void TmlPreprocessor::parseFile(const QString& file_path, const QString& file_type) {
 	QFileInfo fi(file_path);

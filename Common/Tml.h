@@ -1,8 +1,8 @@
 #ifndef __TML_H__
 #define __TML_H__
 
-#include "Core/Utils/Str.h"
-#include "Core/Utils/Vector.h"
+#include "core/Types/Str.h"
+#include "core/Types/Vector.h"
 #include "QString"
 
 class TmlItem {

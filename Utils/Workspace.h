@@ -1,10 +1,10 @@
 #ifndef __WORKSPACE_H__
 #define __WORKSPACE_H__
 
-#include "Base.h"
-#include "Core/Utils/Singleton.h"
-#include "Core/Utils/Vector.h"
-#include "Core/Common/Tml.h"
+#include "core/types/Base.h"
+#include "core/utils/Singleton.h"
+#include "core/types/Vector.h"
+#include "coreqt/Common/Tml.h"
 
 #include<QFileInfo>
 #include <QMap>

@@ -1,9 +1,9 @@
 #ifndef __TML_PREPROCESSOR_H__
 #define __TML_PREPROCESSOR_H__
 
-#include "Core/Utils/Str.h"
-#include "Core/Utils/Vector.h"
-#include "Core/Common/Tml.h"
+#include "core/types/Str.h"
+#include "core/types/Vector.h"
+#include "coreqt/Common/Tml.h"
 
 #include <QString>
 #include <QFileInfo>
